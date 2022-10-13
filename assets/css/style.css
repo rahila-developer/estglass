@@ -40,38 +40,33 @@ color: #2E006C;
     color: #9557E8;
 }
 
-.navbar{
-padding-left: 50px;
-padding-right: 50px;
-}
+
 .navbar-light .navbar-nav .nav-link {
-color:#000000;
 font-weight: 600;
-text-transform: uppercase;
-font-size: 14px;
-
-margin-right: 35px;
+font-size: 17px;
+color: #461A81;
+margin-right: 40px;
 position: relative;
+padding-top: 38px;
+    padding-bottom: 38px;
 }
-
-
 
 
 .navbar .navbar-nav .nav-link:before {
 content: '';
 position: absolute;
 left: 0px;
-bottom: 0px;
+top: 0px;
 width: 0px;
-height: 1px;
-background: #022090;
+height: 5px;
+background: #6FD4E2;
 transition: all 0.35s ease-out;
 -webkit-transition: all 0.35s ease-out;
 -ms-transition: all 0.35s ease-out;
 }
 
 .navbar .navbar-nav .nav-link:hover {
-color: #022090;
+color: #6FD4E2;
 transition: all 0.5s ease-out;
 -webkit-transition: all 0.5s ease-out;
 -ms-transition: all 0.5s ease-out;
@@ -80,9 +75,156 @@ transition: all 0.5s ease-out;
 .navbar .navbar-nav .nav-link:hover:before {
 width: 100%;
 }
+.navbar .navbar-nav .nav-link.active{
+    color: #6FD4E2;
+   
+    }
+.navbar .navbar-nav .nav-link.active:before {
+    width: 100%;
+   
+    }
+    .wd-link {
+        width: 270px;
+        margin-left: 17px;
+    }
 .section{
     padding: 80px 0px;
 }
+.sec-banner{
+    background: url(../../assets/img/baner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 625px;
+    display: flex;
+    align-items: center;
+}
+.main-heading{
+    font-weight: 700;
+font-size: 40px;
+line-height: 50px;
+}
+.slider-content{
+    font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+text-align: center;
+
+color: #484848;
+}
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(69, 27, 125, 0.54);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+}
+.overlay.odd{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.overlay.even{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.item-img {
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.item-img:hover .overlay {
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+.fade-overlay {
+    height: 100%;
+    opacity: 0;
+}
+
+.item-img:hover .fade-overlay {
+  opacity: 1;
+}
+.text {
+    color: #312861;
+    font-size: 26;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.ribbon {
+    position: absolute;
+    top: 1px;
+    background: purple;
+    width: 163px;
+    color: #6FD4E2;
+    text-align: center;
+    transform: rotate(-45deg);
+    top: 30px;
+    left: -39px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.ribbon.ribbon-cyan{
+    background:#6FD4E2;
+    color:purple ;
+}
+
+button.slick-arrow {
+    background: #9557E8;
+    border-radius: 50px;
+    border:0px;
+    }
+    .prev-arrow {
+        position: absolute;
+        top: 50%;
+        margin-top: -15px;
+        left: -11px;
+        width: 45px;
+        height: 45px;
+    
+        line-height: 26px;
+   
+        font-size: 25px;
+      
+        color: #fff;
+        display: block;
+    }
+    .next-arrow {
+        position: absolute;
+        top: 50%;
+        margin-top: -15px;
+        right: -11px;
+        width: 45px;
+        height: 45px;
+   
+        line-height: 26px;
+    
+        font-size: 25px;
+    
+        color: #fff;
+        display: block;
+    }
+    .slick-slide {
+    padding:5px;
+    margin-right:10px;
+    margin-left:10px;
+    }
+
 .main-content{
     font-style: normal;
 font-weight: 400;
@@ -268,6 +410,23 @@ Media Queries
   }
 
   @media (min-width: 1600px) and (max-width: 2400px) {
+    .navbar-light .navbar-nav .nav-link {
+
+        font-weight: 600;
+        
+        font-size: 20px;
+        color: #461A81;
+        margin-right: 35px;
+        position: relative;
+        }
+    .slider-content{
+        font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    
+    color: #484848;
+    }
     .main-content{
         font-style: normal;
     font-weight: 400;
