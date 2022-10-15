@@ -26,7 +26,7 @@
 
 <body class="">
   
-   <nav class="navbar navbar-expand-lg navbar-light py-0">
+   <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light py-0">
       <div class="container">
          <a class="navbar-brand" href="#"><img src="./assets/img/logo.png" class="img-fluid" alt=""></a>
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -378,6 +378,25 @@
          ]
       });
    </script>
+   <script>
+      document.addEventListener("DOMContentLoaded", function(){
+                
+                window.addEventListener('scroll', function() {
+                    
+                   if (window.scrollY > 200) {
+                      document.getElementById('navbar_top').classList.add('fixed-top');
+                      // add padding top to show content behind navbar
+                      navbar_height = document.querySelector('.navbar').offsetHeight;
+                      document.body.style.paddingTop = navbar_height + 'px';
+                   } else {
+                      document.getElementById('navbar_top').classList.remove('fixed-top');
+                       // remove padding top from body
+                      document.body.style.paddingTop = '0';
+                   } 
+                });
+             }); 
+             // DOMContentLoaded  end
+ </script>
     
 </body>
 
