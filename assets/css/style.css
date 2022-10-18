@@ -694,10 +694,10 @@ border-radius: 16px;
 padding: 20px;
 width: 348px;
 }
-.slick-initialized .slick-slide {
+/* .sec-testmonial-client .slick-initialized .slick-slide { 
     display: block;
     width: auto !important;
-}
+} */
 .fs-14{
     font-size: 14px;
 }
