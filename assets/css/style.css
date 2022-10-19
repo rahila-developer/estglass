@@ -813,6 +813,105 @@ button.btn.btn-submit {
     left: 40px;
     right: 30px;
 }
+.car-payment{
+    background: #FFFFFF;
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+border-radius: 16px;
+padding: 20px 0px;
+}
+.car-payment .nav-pills .nav-link {
+    border: 1px solid #C8C8C8;
+    color: #C8C8C8;
+    text-align: left;
+    margin: 0px 5px;
+    border-radius: 8px;
+    width: 120px;
+}
+.car-payment .nav-pills .nav-link.active,.car-payment .nav-pills .show>.nav-link {
+    color: #fff;
+    background: #9557E8;
+    color: #fff !important;
+}
+.tab-pay{
+    padding: 20px 45px;
+}
+.tab-pay.active{
+    background: rgba(149, 87, 232, 0.15);
+}
+.car-payment.sel-ofr .nav-pills .nav-link {
+    border: 1px solid #C8C8C8;
+    color: #C8C8C8;
+    text-align: center;
+    margin: 0px 5px;
+    border-radius: 8px;
+    width: 250px;
+    height: 70px;
+}
+.table-car th {
+    text-align: left;
+    font-weight: 700;
+    font-size: 14px;
+    color: #484848;
+}
+.table-car th{
+    width: 15%;
+}
+.table-car td{
+    width: 30%;
+    text-align: right;
+}
+.btn-mini{
+    font-weight: 400;
+font-size: 13px;
+color: #4DCA5A;
+background: rgba(77, 202, 90, 0.1);
+border-radius: 8px;
+padding: 0px 10px;
+}
+.btn-mini-gray{
+    font-weight: 400;
+font-size: 13px;
+color: #C8C8C8;
+background: #F4F4F4;
+border-radius: 8px;
+
+padding: 0px 10px;
+}
+.form-check-input:checked {
+    background-color: #9557e8;
+    border-color: #9557e8;
+}
+.form-check .form-check-input {
+    margin-left: 1em;
+}
+.car-check.form-check {
+    display: flex;
+    justify-content: end;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: 0.125rem;
+}
+.btn-purple-radius{
+    font-weight: 500;
+font-size: 17px;
+background: #9557E8;
+border-radius: 41px;
+padding: 18px 20px;
+color: #fff;
+display: block;
+}
+.btn-purple-outline{
+    color: #2E006C;
+    border: 1px solid #2E006C;
+border-radius: 41px;
+font-weight: 500;
+font-size: 17px;
+padding: 18px 20px;
+display: block;
+}
+.btn-purple-radius:hover{
+color: #fff;
+}
 /*Responsive table*/
 /*======
 Media Queries
