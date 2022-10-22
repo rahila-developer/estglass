@@ -28,21 +28,38 @@
   
    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light py-0">
       <div class="container">
-         <a class="navbar-brand" href="#"><img src="./assets/img/logo.png" class="img-fluid" alt=""></a>
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-         </button>
+
+          <div class="mobile-nav d-sm-block d-md-none d-lg-none w-100">
+            <div class="row align-items-center w-100 g-0">
+               <div class="col-3">
+                  <div  id="toggle" class="toggle-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="bar top"></span>
+                     <span class="bar middle"></span>
+                     <span class="bar bottom"></span>
+                  </div>
+               </div>
+               <div class="col-6">
+                  <a class=" py-2" href="#"><img src="./assets/img/logo.png" class="img-fluid d-block mx-auto" alt=""></a>
+               </div>
+               <div class="col-3 text-end">
+                  <a href="" class=""><img src="./assets/img/ph.svg" class="img-fluid ms-auto d-block" alt=""></a>
+               </div>
+            </div>
+          </div>
+       
+         <a class="navbar-brand d-none d-lg-flex d-md-none d-sm-none" href="#"><img src="./assets/img/logo.png" class="img-fluid" alt=""></a>
+        
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-lg-0 align-items-center">
                <li class="nav-item ">
                   <a class="nav-link " href="#">Services</a>
                </li>
                <li class="nav-item">   
-                  <a class="nav-link active" href="#">Pricing</a>
+                  <a class="nav-link" href="#">Pricing</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact us</a>
+                  <a class="nav-link active" href="#">Contact us</a>
                </li>
                <li class="nav-item">
                   <a class="btn btn-et wd-link" href="#">Get a Quote</a>
@@ -71,23 +88,23 @@
                     <p class="main-content mt-3 mb-4">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit offici liqua conti.</p>
                     <div class="row">
                         <div class="col-md-6">
-                            <h5 class="text-blue fw-normal">Headquarter</h5>
+                            <h5 class="text-blue fw-normal mt-mob-h">Headquarter</h5>
                             <p>Estglass Ltd. <br>
                                 Main Ave, Enfield EN1 1GD, <br>
                                 United Kingdom</p>
                         </div>
                         <div class="col-md-6">
-                           <h5 class="text-blue fw-normal">Call us or write an email</h5>
+                           <h5 class="text-blue fw-normal call-txt">Call us or write an email</h5>
                           <p class="mb-0"> <a href="" class="text-gray text-decoration-none">+44 772 345 1616</a></p>
                            <a href="" class="text-gray text-decoration-none">contact@estglass.co.uk</a>
                         </div>
                     </div>
                 </div>
 
-               <div class="col-md-4">
+               <div class="col-md-4 mt-4 mt-md-0">
                 <h2 class="text-blue">Quick quote</h2>
                 <p class="main-content mt-3 mb-4">Enter your name and phone and we will call you back in 1 hour.</p>
-                <form action="">
+                <form action="" class="pt-4 pt-md-0">
                     <div class="form-group position-relative mb-4">
                         <label for="" class="form-label">Your Name</label>
                         <input type="text" class="form-control cool">
@@ -231,6 +248,12 @@ $('.cool').on('focusout', function() {
   }
 });
    </script>
+    <script>
+      $('#toggle').click(function() {
+       $(this).toggleClass('toggle-active');
+       $('#overlay').toggleClass('nav-active');
+   });
+    </script>
     
 </body>
 

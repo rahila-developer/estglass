@@ -25,13 +25,31 @@
    <body class="">
       <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light py-0">
          <div class="container">
-            <a class="navbar-brand" href="#"><img src="./assets/img/logo.png" class="img-fluid" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="mobile-nav d-sm-block d-md-none d-lg-none w-100">
+               <div class="row align-items-center w-100 g-0">
+                  <div class="col-4">
+                     <a class=" py-2" href="#"><img src="./assets/img/logo.png" class="img-fluid d-block mx-auto" alt=""></a>
+                  </div>
+                  <div class="col-5 text-end ms-auto">
+                     <a href="" class="btn btn-purple ms-auto">Get a Quote</a>
+                     </div>
+                  <div class="col-2 text-end">
+                 
+                     <div  id="toggle" class="toggle-button ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="bar top"></span>
+                        <span class="bar middle"></span>
+                        <span class="bar bottom"></span>
+                     </div>
+                  </div>
+                
+                  
+               </div>
+             </div>
+            <a class="navbar-brand d-none d-lg-flex d-md-none d-sm-none" href="#"><img src="./assets/img/logo.png" class="img-fluid" alt=""></a>
+        
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav ms-4  mb-lg-0 align-items-center et-nav">
+               <ul class="navbar-nav ms-md-4  mb-lg-0 align-items-center et-nav">
                   <li class="nav-item ">
                      <a class="nav-link active" href="#">Services</a>
                   </li>
@@ -41,8 +59,12 @@
                   <li class="nav-item">
                      <a class="nav-link" href="#">Contact us</a>
                   </li>
+                 
                </ul>
-               <a href="" class="btn btn-purple bg-gray ms-auto text-blue"><span class="green-dot me-2"></span>  Submitted</a>
+            <a href="" class="btn btn-purple ms-auto d-none d-sm-none d-lg-flex d-md-flex">Get a Quote</a>
+   
+   
+   
             </div>
          </div>
       </nav>
@@ -65,7 +87,7 @@
                   <div class="row">
                      <div class="col-md-4 mx-auto">
                         <div class="car-code d-flex justify-content-between align-items-center">
-                           <div class="code-state">
+                           <div class="code-state me-5">
                               <ul class="list-inline d-flex align-items-center">
                                  <li class="list-inline-item state-bg">
                                     <svg width="20" height="100%" class="mb-0" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,7 +107,8 @@
                                     <p class="mb-0 text-white">GB</p>
                                  </li>
                                  <li class="list-inline-item code-content">
-                                    AB72 CDE
+                                   
+                                    <input type="text" class="form-control" placeholder=" AB72 CDE">
                                  </li>
                               </ul>
                               <p class="fw-500 mb-0 ms-2"><img src="./assets/img/car-sv.svg" class="img-fluid me-2" alt=""> Peugeot 208</p>
@@ -110,10 +133,11 @@
                            <a href="" class="btn btn-gray">Rear Door SX</a>
                            <a href="" class="btn btn-gray">Rear Door Quarter RX</a>
                         </div>
+                        <div class="parent">
                         <div class="img-carmain position-relative my-md-5 my-4">
                            <img src="./assets/img/final-car.png" class="img-fluid d-block mx-auto" alt="">
-                           <div class="submit-btn">
-                              <button class="btn btn-submit">Submit Request</button>
+                           <div class="submit-btn ">
+                              <button class="btn btn-submit sticky-header is-sticky">Submit Request</button>
                            </div>
                         </div>
                         <p class="fs-18 text-blue">Your comments (optional)</p>
@@ -151,9 +175,11 @@
                                  </div>
                               </div>
                            </div>
+
+                          </div>
                         </form>
                         <div class="position-relative pt-md-4">
-                           <img src="./assets/img/hand-pic.png" class="img-fluid w-100" alt="">
+                           <img src="./assets/img/hand-pic.png" class="img-fluid w-100 mob-h" alt="">
                            <div class="recycle-content text-start phn-content">
                               <div class="d-flex justify-content-between">
                                  <div class="content-left">
@@ -175,7 +201,7 @@
                   <div class="row">
                      <div class="col-md-4 mx-auto">
                         <div class="car-code d-flex justify-content-between align-items-center">
-                            <div class="code-state">
+                            <div class="code-state me-5">
                               <ul class="list-inline d-flex align-items-center">
                                  <li class="list-inline-item state-bg">
                                     <svg width="20" height="100%" class="mb-0" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -195,7 +221,7 @@
                                        <p class="mb-0 text-white">GB</p>
                                  </li>
                                  <li class="list-inline-item code-content">
-                                    AB72 CDE
+                                    <input type="text" class="form-control" placeholder=" AB72 CDE">
                                  </li>
                               </ul>
                              <p class="fw-500 mb-0 ms-2"><img src="./assets/img/car-sv.svg" class="img-fluid me-2" alt=""> Peugeot 208</p>
@@ -491,9 +517,9 @@
             </div>
          </div>
       </section>
-      <section class="sec-testmonial-client bg-white pt-md-0">
+      <section class="sec-testmonial-client bg-white pt-md-0 pt-5">
          <div class="container-fluid">
-            <h2 class="text-blue text-center mb-md-5">Testimonials</h2>
+            <h2 class="text-blue text-center mb-md-5 mb-4">Testimonials</h2>
             <div class="testmon p-4 ">
                <div class="item ">
                   <div class="testmon-box mb-4">
@@ -730,7 +756,7 @@
          <div class="container">
             <div class="row">
                <div class="col-md-7">
-                  <h2 class="title-s mb-4">With every glass replacement 
+                  <h2 class="title-s mb-4 mt-md-0 mt-5">With every glass replacement 
                      <span class="text-purple d-md-block"> we plant a tree.</span> 
                   </h2>
                   <p class="text-purple fs-18 fw-500 mb-1">Trees are vital</p>
@@ -738,7 +764,7 @@
                   <div class="row">
                      <div class="col-md-9">
                         <div class="position-relative pt-md-4">
-                           <img src="./assets/img/re-cycle.png" class="img-fluid" alt="">
+                           <img src="./assets/img/re-cycle.png" class="img-fluid m-hmob" alt="">
                            <div class="recycle-content">
                               <div class="d-flex justify-content-between">
                                  <div class="content-left">
@@ -932,5 +958,11 @@
                 }); 
                 // DOMContentLoaded  end
       </script>
+        <script>
+         $('#toggle').click(function() {
+          $(this).toggleClass('toggle-active');
+          $('#overlay').toggleClass('nav-active');
+      });
+       </script>
    </body>
 </html>

@@ -25,13 +25,31 @@
    <body class="">
       <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light py-0">
          <div class="container">
-            <a class="navbar-brand" href="#"><img src="./assets/img/logo.png" class="img-fluid" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="mobile-nav d-sm-block d-md-none d-lg-none w-100">
+               <div class="row align-items-center w-100 g-0">
+                  <div class="col-4">
+                     <a class=" py-2" href="#"><img src="./assets/img/logo.png" class="img-fluid d-block mx-auto" alt=""></a>
+                  </div>
+                  <div class="col-5 text-end ms-auto">
+                     <a href="" class="btn btn-purple ms-auto">Get a Quote</a>
+                     </div>
+                  <div class="col-2 text-end">
+                 
+                     <div  id="toggle" class="toggle-button ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="bar top"></span>
+                        <span class="bar middle"></span>
+                        <span class="bar bottom"></span>
+                     </div>
+                  </div>
+                
+                  
+               </div>
+             </div>
+            <a class="navbar-brand d-none d-lg-flex d-md-none d-sm-none" href="#"><img src="./assets/img/logo.png" class="img-fluid" alt=""></a>
+        
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav ms-4  mb-lg-0 align-items-center et-nav">
+               <ul class="navbar-nav ms-md-4  mb-lg-0 align-items-center et-nav">
                   <li class="nav-item ">
                      <a class="nav-link active" href="#">Services</a>
                   </li>
@@ -41,8 +59,12 @@
                   <li class="nav-item">
                      <a class="nav-link" href="#">Contact us</a>
                   </li>
+                 
                </ul>
-               <a href="" class="btn btn-purple bg-gray ms-auto text-blue"><span class="green-dot me-2"></span>  Submitted</a>
+            <a href="" class="btn btn-purple ms-auto d-none d-sm-none d-lg-flex d-md-flex">Get a Quote</a>
+   
+   
+   
             </div>
          </div>
       </nav>
@@ -210,5 +232,11 @@
                 }); 
                 // DOMContentLoaded  end
       </script>
+        <script>
+         $('#toggle').click(function() {
+          $(this).toggleClass('toggle-active');
+          $('#overlay').toggleClass('nav-active');
+      });
+       </script>
    </body>
 </html>

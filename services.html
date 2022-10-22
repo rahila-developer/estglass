@@ -25,14 +25,30 @@
 <!-- ------------------header-------------->
 
 <body class="">
-  
-   <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light py-0">
+     <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light py-0">
       <div class="container">
-         <a class="navbar-brand" href="#"><img src="./assets/img/logo.png" class="img-fluid" alt=""></a>
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-         </button>
+
+          <div class="mobile-nav d-sm-block d-md-none d-lg-none w-100">
+            <div class="row align-items-center w-100 g-0">
+               <div class="col-3">
+                  <div  id="toggle" class="toggle-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="bar top"></span>
+                     <span class="bar middle"></span>
+                     <span class="bar bottom"></span>
+                  </div>
+               </div>
+               <div class="col-6">
+                  <a class=" py-2" href="#"><img src="./assets/img/logo.png" class="img-fluid d-block mx-auto" alt=""></a>
+               </div>
+               <div class="col-3 text-end">
+                  <a href="" class=""><img src="./assets/img/ph.svg" class="img-fluid ms-auto d-block" alt=""></a>
+               </div>
+            </div>
+          </div>
+       
+         <a class="navbar-brand d-none d-lg-flex d-md-none d-sm-none" href="#"><img src="./assets/img/logo.png" class="img-fluid" alt=""></a>
+        
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-lg-0 align-items-center">
                <li class="nav-item ">
@@ -65,11 +81,13 @@
       <div class="container">
         
       <div class="row text-center gy-md-5 gy-4">
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6">
             <div class="content">
              
                 <div class="content-overlay"></div>
+                <div class="sv-m">
                 <img src="./assets/img/ic1.png" class="img-fluid mb-4" alt="">
+                <div class="content-sv">
                 <h5 class="text-blue mb-3 pt-2">Service Name</h5>
                 <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                 <div class="content-details fadeIn-bottom">
@@ -77,133 +95,158 @@
                   <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim </p>
                   <a href="" class="text-white">Contact us now</a>
                 </div>
-           
+                </div>
+           </div>
             </div>
         </div>
-        <div class="col-md-3">
-            <div class="content">
-             
-                <div class="content-overlay"></div>
-                <img src="./assets/img/ic2.png" class="img-fluid mb-4" alt="">
-                <h5 class="text-blue mb-3 pt-2">Service Name</h5>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <div class="content-details fadeIn-bottom">
-                  <h3 class="text-white">Need more?</h3>
-                  <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim </p>
-                  <a href="" class="text-white">Contact us now</a>
-                </div>
-           
-            </div>
-           </div>
-
-           <div class="col-md-3">
-            <div class="content">
-             
-                <div class="content-overlay"></div>
-                <img src="./assets/img/ic3.png" class="img-fluid mb-4" alt="">
-                <h5 class="text-blue mb-3 pt-2">Service Name</h5>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <div class="content-details fadeIn-bottom">
-                  <h3 class="text-white">Need more?</h3>
-                  <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim </p>
-                  <a href="" class="text-white">Contact us now</a>
-                </div>
-           
-            </div>
-           </div>
-
-           <div class="col-md-3">
-            <div class="content">
-             
-                <div class="content-overlay"></div>
-                <img src="./assets/img/ic4.png" class="img-fluid mb-4" alt="">
-                <h5 class="text-blue mb-3 pt-2">Service Name</h5>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <div class="content-details fadeIn-bottom">
-                  <h3 class="text-white">Need more?</h3>
-                  <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim </p>
-                  <a href="" class="text-white">Contact us now</a>
-                </div>
-           
-            </div>
-           </div>
-
-
-           <div class="col-md-3">
-            <div class="content">
-             
-                <div class="content-overlay"></div>
-                <img src="./assets/img/ic5.png" class="img-fluid mb-4" alt="">
-                <h5 class="text-blue mb-3 pt-2">Service Name</h5>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <div class="content-details fadeIn-bottom">
-                  <h3 class="text-white">Need more?</h3>
-                  <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim </p>
-                  <a href="" class="text-white">Contact us now</a>
-                </div>
-           
-            </div>
-           </div>
-
-
-           <div class="col-md-3">
-            <div class="content">
-             
-                <div class="content-overlay"></div>
-                <img src="./assets/img/ic6.png" class="img-fluid mb-4" alt="">
-                <h5 class="text-blue mb-3 pt-2">Service Name</h5>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <div class="content-details fadeIn-bottom">
-                  <h3 class="text-white">Need more?</h3>
-                  <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim </p>
-                  <a href="" class="text-white">Contact us now</a>
-                </div>
-           
-            </div>
-           </div>
-
-
-           <div class="col-md-3">
-            <div class="content">
-             
-                <div class="content-overlay"></div>
-                <img src="./assets/img/ic7.png" class="img-fluid mb-4" alt="">
-                <h5 class="text-blue mb-3 pt-2">Service Name</h5>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <div class="content-details fadeIn-bottom">
-                  <h3 class="text-white">Need more?</h3>
-                  <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim </p>
-                  <a href="" class="text-white">Contact us now</a>
-                </div>
-           
-            </div>
-           </div>
-
-
-
-           <div class="col-md-3">
-
-            <div class="content">
-             
-                  <div class="content-overlay"></div>
-                  <img src="./assets/img/ic7.png" class="img-fluid mb-4" alt="">
-                  <h5 class="text-blue mb-3 pt-2">Service Name</h5>
-                  <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                  <div class="content-details fadeIn-bottom">
-                    <h3 class="text-white">Need more?</h3>
-                    <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim </p>
-                    <a href="" class="text-white">Contact us now</a>
-                  </div>
-             
-              </div>
-
+        <div class="col-md-3 col-sm-6">
+         <div class="content">
           
-           </div>
+             <div class="content-overlay"></div>
+             <div class="sv-m">
+             <img src="./assets/img/ic2.png" class="img-fluid mb-4" alt="">
+             <div class="content-sv">
+             <h5 class="text-blue mb-3 pt-2">Service Name</h5>
+             <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+             <div class="content-details fadeIn-bottom">
+               <h3 class="text-white">Need more?</h3>
+               <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim </p>
+               <a href="" class="text-white">Contact us now</a>
+             </div>
+             </div>
+        </div>
+         </div>
+     </div>
+
+     <div class="col-md-3 col-sm-6">
+      <div class="content">
+       
+          <div class="content-overlay"></div>
+          <div class="sv-m">
+          <img src="./assets/img/ic3.png" class="img-fluid mb-4" alt="">
+          <div class="content-sv">
+          <h5 class="text-blue mb-3 pt-2">Service Name</h5>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          <div class="content-details fadeIn-bottom">
+            <h3 class="text-white">Need more?</h3>
+            <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim </p>
+            <a href="" class="text-white">Contact us now</a>
+          </div>
+          </div>
+     </div>
+      </div>
+  </div>
+
+  <div class="col-md-3 col-sm-6">
+   <div class="content">
+    
+       <div class="content-overlay"></div>
+       <div class="sv-m">
+       <img src="./assets/img/ic4.png" class="img-fluid mb-4" alt="">
+       <div class="content-sv">
+       <h5 class="text-blue mb-3 pt-2">Service Name</h5>
+       <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+       <div class="content-details fadeIn-bottom">
+         <h3 class="text-white">Need more?</h3>
+         <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim </p>
+         <a href="" class="text-white">Contact us now</a>
+       </div>
+       </div>
+  </div>
+   </div>
+</div>
+
+<div class="col-md-3 col-sm-6">
+   <div class="content">
+    
+       <div class="content-overlay"></div>
+       <div class="sv-m">
+       <img src="./assets/img/ic5.png" class="img-fluid mb-4" alt="">
+       <div class="content-sv">
+       <h5 class="text-blue mb-3 pt-2">Service Name</h5>
+       <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+       <div class="content-details fadeIn-bottom">
+         <h3 class="text-white">Need more?</h3>
+         <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim </p>
+         <a href="" class="text-white">Contact us now</a>
+       </div>
+       </div>
+  </div>
+   </div>
+</div>
+
+
+<div class="col-md-3 col-sm-6">
+   <div class="content">
+    
+       <div class="content-overlay"></div>
+       <div class="sv-m">
+       <img src="./assets/img/ic6.png" class="img-fluid mb-4" alt="">
+       <div class="content-sv">
+       <h5 class="text-blue mb-3 pt-2">Service Name</h5>
+       <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+       <div class="content-details fadeIn-bottom">
+         <h3 class="text-white">Need more?</h3>
+         <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim </p>
+         <a href="" class="text-white">Contact us now</a>
+       </div>
+       </div>
+  </div>
+   </div>
+</div>
+
+<div class="col-md-3 col-sm-6">
+   <div class="content">
+    
+       <div class="content-overlay"></div>
+       <div class="sv-m">
+       <img src="./assets/img/ic7.png" class="img-fluid mb-4" alt="">
+       <div class="content-sv">
+       <h5 class="text-blue mb-3 pt-2">Service Name</h5>
+       <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+       <div class="content-details fadeIn-bottom">
+         <h3 class="text-white">Need more?</h3>
+         <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim </p>
+         <a href="" class="text-white">Contact us now</a>
+       </div>
+       </div>
+  </div>
+   </div>
+</div>
+
+
+<div class="col-md-3 col-sm-6">
+   <div class="content">
+    
+       <div class="content-overlay"></div>
+       <div class="sv-m">
+       <img src="./assets/img/ic7.png" class="img-fluid mb-4" alt="">
+       <div class="content-sv">
+       <h5 class="text-blue mb-3 pt-2">Service Name</h5>
+       <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+       <div class="content-details fadeIn-bottom">
+         <h3 class="text-white">Need more?</h3>
+         <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim </p>
+         <a href="" class="text-white">Contact us now</a>
+       </div>
+       </div>
+  </div>
+   </div>
+</div>
+
+
+
 
       </div>
+
+      <div class=" content-bottom  position-unset">
+         <h3 class="text-white">Need more?</h3>
+         <p class="text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim </p>
+         <a href="" class="text-white">Contact us now</a>
+       </div>
       </div>
     </section>
-   <section class="sec-case section bg-gray">
+   <section class="sec-case section bg-gray pb-5 ">
       <div class="container">
          <h2 class="text-blue mb-3 text-center">Case Studies</h2>
          <p class="main-content mb-4 text-center">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet venim aliqua conti.</p>
@@ -224,7 +267,7 @@
             </div>
          </div>
          <div class="row align-items-center py-4 pb-md-5">
-            <div class="col-md-6 px-4 px-md-5">
+            <div class="col-md-6 px-4 px-md-5 order-change">
                <p class="content-s">Duis enim velit mollit veniam consequat sunt nostrud amet venim aliqua conti</p>
                <p class="text-justify mb-0">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
               
@@ -340,7 +383,7 @@
          </div>
       </div>
    </section>
-   <section class="footer-top">
+   <section class="footer-top ">
       <div class="container">
          <div class="content-box">
        <div class="row">
@@ -546,6 +589,12 @@
                 });
              }); 
              // DOMContentLoaded  end
+ </script>
+  <script>
+   $('#toggle').click(function() {
+    $(this).toggleClass('toggle-active');
+    $('#overlay').toggleClass('nav-active');
+});
  </script>
     
 </body>
