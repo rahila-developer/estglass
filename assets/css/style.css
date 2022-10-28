@@ -469,7 +469,7 @@ font-size: 25px;
   }
   
   .content .content-overlay {
-    background: rgba(69, 27, 125, 0.54);
+    background: rgba(69, 27, 125, 0.80);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 20px;
