@@ -922,6 +922,18 @@ padding: 20px;
     width: 400px;
 }
 
+.footer::before {
+    content: "";
+    width: 500px;
+    height: 360px;
+    background: url(../../assets/img/f-im.svg) top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 28%;
+    z-index: 1;
+}
+
   /*================mobile nav===================*/
 @media (min-width: 320px) and (max-width: 767px){
     .toggle-button {
